@@ -1,5 +1,6 @@
 * Add a Display element to the webpage
-  + give initial text as score and concat it with score
+  - it should be bottom of view port
+  + use it update score
 * For Score create a Game Model and maintain  score in it.
   + whenever snake eats the food the score should increment by 10
 * for each and every time snake eats the food update the score display
