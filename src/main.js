@@ -5,6 +5,10 @@ let numberOfCols=120;
 
 let animator=undefined;
 
+const updateScoreDisplay=function() {
+  let display=document.getElementById('display');
+  display.innerText=`Score: `;
+}
 const animateSnake=function() {
   let oldHead=snake.getHead();
   let oldTail=snake.move();
@@ -56,6 +60,7 @@ const createFood=function(numberOfRows,numberOfCols) {
 
 const startGame=function() {
   createSnake();
+  updateScoreDisplay();
   drawGrids(numberOfRows,numberOfCols);
   drawSnake(snake);
   createFood(numberOfRows,numberOfCols);
